@@ -3,15 +3,16 @@ import {MyComposition} from './Composition';
 import './style.css';
 
 export const RemotionRoot: React.FC = () => {
+	const fps = 60;
 	return (
 		<>
 			<Composition
 				id="MyComp"
 				component={MyComposition}
-				durationInFrames={240}
-				fps={30}
-				width={1280}
-				height={720}
+				durationInFrames={15 * fps}
+				fps={fps}
+				width={1080}
+				height={1920}
 			/>
 		</>
 	);
